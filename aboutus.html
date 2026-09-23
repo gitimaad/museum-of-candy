@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="app.css">
+
+    <title>Museum of Candy - Home</title>
+  </head>
+
+  <body>
+    <!--Let us first begin working on the navbar-->
+    <nav id = "mainNavbar" class = "navbar navbar-dark navbar-expand-md py-0 fixed-top">
+      <a href = "index.html" class = "navbar-brand">CANDY</a>
+      <button class = "navbar-toggler" data-toggle = "collapse" data-target = "#navLinks" aria-label = "Toggle Navigation">
+        <span class = "navbar-toggler-icon"></span>
+      </button>
+      <div class = "collapse navbar-collapse" id = "navLinks">
+        <ul class = "navbar-nav">
+          <li class = "nav-item">
+            <a href = "index.html" class = "nav-link">HOME</a>
+          </li>
+          <li class = "nav-item">
+            <a href = "aboutus.html" class = "nav-link">ABOUT US</a>
+          </li>
+          <li>
+            <a href = "tickets.html" class = "nav-link">TICKETS</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--Section: Add the landscape image-->
+    <section class = "container-fluid px-0">
+      <div class = "align-items-center ">
+        <img class = "img-fluid fade-img" src = "imgs/hand4(landscape).png">
+      </div>
+      <div class = "align-items-center text-center mt-5">
+        <h2>ABOUT US</h2>
+        <p class = "lead">Step into the Museum of Candy, a sprawling, multi-sensory playground dedicated to the universal joy of a sugar rush. We have transformed the history and art of confections into a fully interactive experience, guiding visitors through exhibits that feature everything from cascading cocoa waterfalls and peppermint forests to hands-on flavor labs where you can engineer your own custom chocolate bars. More than just a vibrant backdrop, our museum is a deep dive into the global origins of your favorite treats, blending culinary science with unapologetic nostalgia. Whether you are navigating our life-sized gummy bear sanctuary or sampling rare international sweets in the tasting room, our mission is to awaken your inner child and remind you that life is simply better with a little sugar.</p>
+      </div>
+    </section>
+
+    <!--This specific script is IMPORTANT FOR NAVBAR-->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script>
+      $(function () {
+        $(document).scroll(function(){
+          var $nav = $("#mainNavbar");
+          $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+        });
+      });
+    </script>
+  </body>
+</html>
